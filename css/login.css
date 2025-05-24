@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --azul-primario: #0D1B30
+; /* Um azul mais escuro para o fundo */
+    --cinza-claro: #f0f0f0;
+    --texto-cinza-escuro: #333;
+    --azul-link: #007bff;
+    --azul-botao: #072B49; /* Azul mais claro para o botão */
+    --texto-no-escuro: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cinza-claro);
+    overflow: hidden;
+}
+
+.container-principal {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    height: 90vh; /* Ajuste a altura para caber na tela */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.painel-esquerdo {
+    flex: 1;
+    position: relative;
+    background-color: var(--azul-primario); /* Fallback */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--texto-no-escuro);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.painel-esquerdo .imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre toda a área */
+    filter: brightness(0.6); /* Escurece a imagem */
+    z-index: 1;
+}
+
+.painel-esquerdo .camada-escura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 47, 82, 0.7); /* Camada mais escura para contraste do texto */
+    z-index: 2;
+}
+
+.painel-esquerdo .conteudo-texto {
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    max-width: 80%; /* Ajusta a largura do texto */
+}
+
+.painel-esquerdo .slogan {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.painel-esquerdo .nome-universidade {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.painel-direito {
+    flex: 1;
+    background-color: var(--texto-no-escuro);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.placeholder-logo {
+    margin-bottom: 30px;
+    color: var(--azul-primario); /* Cor de exemplo */
+    font-size: 3em; /* Tamanho para o ícone */
+}
+
+.placeholder-logo img {
+    max-width: 100px; /* Ajusta o tamanho da logo */
+    height: auto;
+}
+
+.placeholder-logo .icone-logo {
+    font-size: 4em; /* Ajusta o tamanho do ícone */
+}
+
+.painel-direito h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: var(--texto-cinza-escuro);
+    font-weight: 500;
+}
+
+.painel-direito form {
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--texto-cinza-escuro);
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--cinza-claro);
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.grupo-formulario input:focus {
+    border-color: var(--azul-botao);
+}
+
+.campo-senha-com-toggle {
+    position: relative;
+    width: 100%;
+}
+
+.campo-senha-com-toggle input {
+    padding-right: 40px; /* Cria espaço para o ícone do olho */
+}
+
+.campo-senha-com-toggle .toggle-senha {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.linha-opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.lembrar-me {
+    display: flex;
+    align-items: center;
+}
+
+.lembrar-me input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--azul-botao); /* Estiliza o checkbox */
+}
+
+.lembrar-me label {
+    font-weight: 400;
+    color: var(--texto-cinza-escuro);
+}
+
+.esqueceu-senha {
+    color: var(--azul-link);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+.botao-entrar {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--azul-botao);
+    color: var(--texto-no-escuro);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-entrar:hover {
+    background-color: #244a82; /* Ligeiramente mais escuro no hover */
+}
+
+.sem-conta {
+    margin-top: 30px;
+    font-size: 0.95em;
+    color: var(--texto-cinza-escuro);
+}
+
+.sem-conta a {
+    color: var(--azul-link);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.sem-conta a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .painel-esquerdo {
+        width: 100%;
+        height: 35vh; /* Ajusta a altura para telas menores */
+        padding: 30px;
+    }
+
+    .painel-esquerdo .conteudo-texto {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .painel-esquerdo .slogan {
+        font-size: 1.6em;
+    }
+
+    .painel-esquerdo .nome-universidade {
+        font-size: 2.2em;
+    }
+
+    .painel-direito {
+        width: 100%;
+        padding: 30px;
+        justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    }
+
+    .painel-direito h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .placeholder-logo {
+        margin-bottom: 20px;
+    }
+
+    .painel-direito form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .painel-esquerdo .slogan {
+        font-size: 1.3em;
+    }
+
+    .painel-esquerdo .nome-universidade {
+        font-size: 1.8em;
+    }
+
+    .painel-direito {
+        padding: 20px;
+    }
+
+    .painel-direito h2 {
+        font-size: 1.5em;
+    }
+
+    .grupo-formulario input, .botao-entrar {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+
+    .linha-opcoes {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .lembrar-me {
+        margin-bottom: 10px;
+    }
+}
