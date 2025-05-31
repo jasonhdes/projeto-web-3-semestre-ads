@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+    FONTES 
+font-family: "Noto Sans KR" sans-serif;   links e depoimento de pessoas
+font-family: "Noto Sans JP", sans-serif; textos títulos
+font-family: "Open Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "DM Sans", sans-serif;
+
+    CORES
+    
+    Azul =  #132748
+    Amarelo = #d99000
+    Branco = #f3f3f3
+*/
+iframe {
+    width: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Noto Sans KR" sans-serif;
+}
+
+.site {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #d99000;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #132748;
+    color: #fff;
+    border-bottom: solid 1px #d99000;
+
+    .site {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            width: 50px;
+            height: 50px;
+            background: url(../img/logo-ub-branco.png) no-repeat;
+            background-size: 100% 100%;
+            text-indent: -9999px;
+            margin: 12px 0;
+        }
+
+        div {
+            margin: 15px;
+            width: 80%;
+
+            nav ul {
+                color: #132748;
+                display: flex;
+                justify-content: space-between;
+                height: 55px;
+                font-size: 20px;
+
+                li {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.panel {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.01), rgb(255, 255, 255, 0.9)), url(../img/imagem.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+
+    h2,
+    h3,
+    h6,
+    p {
+        width: 100%;
+        text-align: center;
+        height: 100px;
+    }
+
+    h2 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 100px;
+        font-weight: 900;
+        height: 150px;
+        padding-top: 50px;
+        color: #132748;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 22px;
+
+        a {
+            background: #132748;
+            padding: 10px 20px;
+            border-radius: 7px;
+            color: #fff;
+        }
+
+        a:hover {
+            color: #d99000;
+        }
+    }
+}
+
+.info {
+    width: 100%;
+    height: 100px;
+    padding: 20px 0;
+
+    article {
+        border: solid 1px #132748;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        height: 100px;
+        text-align: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        background: #fff;
+        max-width: 1200px;
+
+        div {
+            margin: auto 0;
+
+            img {
+                background: #132748;
+                min-width: 60px;
+                min-height: 60px;
+                border-radius: 60px;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.curso {
+    height: 600px;
+    background: #f3f3f3;
+    padding: 20px 0;
+
+    article {
+        display: flex;
+
+        #box1 {
+            padding-right: 10px;
+
+            h4 {
+                height: 280px;
+                font-size: 70px;
+            }
+
+            p {
+                height: 200px;
+                /* padding: 20px 0; */
+                font-size: 20px;
+            }
+
+            .img,
+            h5,
+            h6 {
+                height: 25px;
+                font-size: 20px;
+            }
+
+            .img {
+                background: url(../img/5-stars.png) no-repeat center center;
+                background-size: cover;
+                width: 20%;
+            }
+        }
+
+        #box2 {
+            padding-left: 10px;
+
+            div {
+                height: 280px;
+
+                div {
+                    height: 140px;
+                    display: flex;
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        background: #132748;
+                        border-radius: 20px;
+                    }
+
+                    h4 {
+                        font-size: 35px;
+                        width: 100%;
+                        padding-top: 17.5px;
+                        padding-left: 17.5px;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.docente {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+
+    .site {
+        display: flex;
+
+        .box1 {
+            min-height: 600px;
+            min-width: 600px;
+            background: url(../img/docente.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        .box2 {
+            padding-left: 10px;
+
+            h3 {
+                height: 300px;
+                font-size: 100px;
+                font-weight: 600;
+                text-align: right;
+            }
+
+            p {
+                height: 200px;
+                font-size: 20px;
+                text-align: right;
+                padding-top: 25px;
+            }
+
+            h6 {
+                float: right;
+                font-size: 22px;
+
+                a {
+                    background: #132748;
+                    padding: 10px 20px;
+                    border-radius: 7px;
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: #d99000;
+                }
+            }
+        }
+    }
+}
+
+.expertise {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+
+    .site {
+        display: flex;
+
+        .box1 {
+            padding-left: 10px;
+            width: 600px;
+
+            h3 {
+                height: 150px;
+                font-size: 50px;
+                font-weight: 600;
+                padding-top: 10px;
+            }
+
+            ul {
+                height: 350px;
+                padding-top: 25px;
+
+                li {
+                    font-size: 20px;
+                    height: 70px;
+
+                    img {
+                        min-width: 20px;
+                        min-height: 20px;
+                        background: #132748;
+                        border-radius: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            h6 {
+                font-size: 22px;
+
+                a {
+                    background: #132748;
+                    padding: 10px 20px;
+                    border-radius: 7px;
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: #d99000;
+                }
+            }
+        }
+
+        .box2 {
+            width: 600px;
+            min-height: 600px;
+            min-width: 600px;
+            background: url(../img/expertise.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.comentario {
+    height: 600px;
+    background: #f3f3f3;
+    display: flex;
+
+    .site {
+        display: flex;
+
+        div {
+            width: 590px;
+        }
+
+        .recomend {
+            padding-top: 50px;
+            padding-left: 50px;
+
+            h3 {
+                padding-top: 100px;
+                font-size: 100px;
+                font-weight: 700;
+            }
+
+            h4 {
+                text-align: right;
+                font-size: 50px;
+                font-weight: 600;
+                padding-right: 50px;
+            }
+        }
+
+        .coments {
+            img {
+                width: 90%;
+                height: 60%;
+                margin-top: 100px;
+            }
+        }
+    }
+}
