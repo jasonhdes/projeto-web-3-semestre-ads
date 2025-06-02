@@ -96,7 +96,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1920px;
+    max-width: 1920px;
     height: 550px;
     margin: 0 auto;
 
