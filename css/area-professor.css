@@ -94,11 +94,12 @@ main {
 }
 
 .perfil-info p a {
-    color: #d99000; 
+    color: #132748;
     text-decoration: none;
 }
 
 .perfil-info p a:hover {
+    color: #d99000;
     text-decoration: underline;
 }
 
@@ -124,12 +125,14 @@ main {
 }
 
 .perfil-links-rapidos ul li a {
-    color: #d99000; 
+    color: #132748; 
     text-decoration: none;
     font-size: 21px;
+    font-weight: 500;
 }
 
 .perfil-links-rapidos ul li a:hover {
+    color: #d99000;
     text-decoration: underline;
 }
 

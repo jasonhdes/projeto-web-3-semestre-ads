@@ -50,9 +50,32 @@ a:visited {
 a:hover {
     color: rgb(217, 144, 0);
 }
+.banner {
+    /* background-image: linear-gradient(rgb(19, 79, 32, 0.1), rgb(255, 255, 255, 0.3)),url(../img/banner.jpg); */
+    background: url(../img/banner.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 2000px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    .logo-ub {
+        /* background-image: linear-gradient(rgb(19, 79, 32, 0.0), rgb(255, 255, 255, 0.8)),url(../img/ub-logo-white-1.png); */
+        background: url(../img/ub-logo-white-1.png) no-repeat center center;
+        
+    background-size: cover;
+        width: 250px;
+        height: 350px;
+        margin-left: 50px;
+        
+    }
+
+}
 
 .panel {
-    background-image: linear-gradient(rgb(217, 144, 0, 0.5), rgb(255, 255, 255, 0.8)), url(../img/5594016.jpg);
+    background-image: linear-gradient(rgb(77, 123, 159, 1), rgb(255, 255, 255, 0.8)), url(../img/5594016.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,10 +97,11 @@ a:hover {
         font-family: "DM Sans", sans-serif;
         font-size: 100px;
         font-weight: 900;
-        height: 150px;
+        height: 120px;
         padding-top: 50px;
-        color: #132748;
+        color: rgb(19, 39, 72);
         background: #fff;
+        border-radius: 20px 20px 0 0;
     }
 
     h3 {
