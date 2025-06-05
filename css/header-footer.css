@@ -1,3 +1,27 @@
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Noto Sans KR" sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(217, 144, 0);
+}
+
 header {
     width: 100%;
     height: 80px;
@@ -77,19 +101,28 @@ footer {
                 div {
                     width: 185px;
 
-                    h4 {
-                        height: 60px;
-                        font-size: 20px;
-                        font-weight: 600;
-                    }
-
-                    nav {
+                    
                         ul {
-                            li {
-                                height: 50px;
+                            h5 {
+                                font-size: 25px;
+                            }
+                            li{
+                                margin-top: 10px;
                             }
                         }
+                    
+                }
+
+                .mec {
+                    margin-top: 220px;
+                    margin-right: -120px;
+                    flex-direction: row;
+
+                    h4 {
+                        font-size: 18px !important;
                     }
+
+
                 }
             }
         }
@@ -99,40 +132,47 @@ footer {
         background: #fff;
         color: #132748;
         display: flex;
-        height: 400px;
+        justify-content: center;
+        padding: 40px 0;
 
         .site {
-            margin-top: 25px;
-            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+
+            details {
+                cursor: pointer;
+            }
 
             .line1,
             .line2 {
-                width: 1200px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
+                width: 100%;
+                margin: 20px 0;
 
                 div {
-                    margin: 20px 0;
+                    width: 185px;
+                    margin: 0 10px;
 
-                    h4 {
-                        height: 30px;
-                        font-size: 20px;
-                        font-weight: 600;
-                        text-align: center;
-                    }
-
-                    nav {
+                    
                         ul {
-                            li {
-                                height: 20px;
-                                font-size: 17px;
+                            h5 {
+                                font-size: 20px;
+                            }
+                            li{
+                                font-size: 18px;
+                                margin-top: 10px;
                             }
                         }
-                    }
+                    
                 }
             }
         }
     }
+
 
     .footer-line-3 {
         background: #132748;
@@ -159,35 +199,71 @@ footer {
                     font-weight: 500;
                 }
             }
+
             .box2 {
                 text-align: center;
-                    
+
                 width: 700px;
                 height: 170px;
+
                 ul {
                     width: 700px;
                     display: flex;
                     justify-content: space-around;
-                    
+
                     li {
                         display: flex;
                         width: 50px;
                         height: 50px;
                         padding: 65px 0;
+
                         a {
-                            
-                        background: green;
-                        min-width: 50px;
-                        min-height: 50px;
-                        }
-                        li:hover,
-                        a:hover {
                             min-width: 60px;
                             min-height: 60px;
                         }
-                        
+
+                        .instagram {
+                            background-image: url(../img/instagram.png);
+                        }
+
+                        .facebook {
+                            background-image: url(../img/facebook.png);
+                        }
+
+                        .whatsapp {
+                            background-image: url(../img/whatsapp.png);
+                        }
+
+                        .youtube {
+                            background-image: url(../img/youtube.png);
+                        }
+
+                        li:hover,
+                        a:hover {
+                            min-width: 70px;
+                            min-height: 70px;
+                        }
+
+                        .instagram:hover {
+                            background-image: url(../img/instagramd.png);
+                        }
+
+
+                        .facebook:hover {
+                            background-image: url(../img/facebookd.png);
+                        }
+
+                        .whatsapp:hover {
+                            background-image: url(../img/whatsappd.png);
+                        }
+
+                        .youtube:hover {
+                            background-image: url(../img/youtubed.png);
+                        }
+
                     }
                 }
+
                 small {
                     color: #fff;
                     height: 20px;
@@ -195,19 +271,121 @@ footer {
                     font-weight: 500;
                 }
             }
+
             .box3 {
                 width: 300px;
                 justify-content: space-between;
                 padding-top: 25px;
+
                 div {
                     padding-left: 20px;
-                img {
-                    padding-top: 10px;
-                    max-width: 200px;
-                    max-height: 100px;
+
+                    img {
+                        padding-top: 10px;
+                        max-width: 200px;
+                        max-height: 100px;
+                    }
                 }
-            }
             }
         }
     }
 }
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+
+
+    header {
+        width: 100%;
+
+        & .site {
+
+            h1 {
+                margin: 12px auto;
+            }
+
+            & div {
+                & nav ul {
+                    li {
+                        margin: auto;
+
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+
+        .footer-line-1 {
+            .site {
+                .box2 {
+                    width: 620px;
+
+                    div {
+                        ul {
+                            h5 {
+                                font-size: 18px;
+                            }
+                            li{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+
+                    .mec {
+                        margin-top: 220px;
+                        margin-right: 4px;
+                        flex-direction: row;
+
+                        h4 {
+                            font-size: 18px;
+                            margin-bottom: 8px;
+                        }
+                    
+
+
+                    }
+                }
+            }
+        }
+
+       
+
+        .footer-line-3{
+            height: 201px;
+            .site{
+                align-items: center;
+                .box2{
+                    ul{
+                        width: 500px;
+                    }
+                }
+
+                .box3{
+                    width: 325px;
+                    padding-top: 25px;
+
+                    summary::marker{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+}
+
+@media (max-width:480px) {}
