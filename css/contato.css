@@ -1,0 +1,119 @@
+/* Importa fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+    FONTES USADAS NO PROJETO:
+    "Noto Sans KR" – usada em links e depoimentos
+    "Noto Sans JP" – usada para títulos e textos
+    "Open Sans", "DM Sans", "Montserrat" – fontes auxiliares
+*/
+
+/* Corpo da página */
+body {
+    font-family: "Montserrat", sans-serif; /* Fonte principal */
+    padding-top: 25px; /* Espaço entre o topo da tela e o conteúdo */
+    background: url(../img/fundo-ub.png) no-repeat center center; /* Imagem de fundo centralizada */
+    width: 100%;
+    background-size: cover; /* A imagem cobre toda a tela */
+}
+
+/* Aplica fonte para todos os títulos e links */
+h2, h3, h4, h5, h6, a {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* Container principal usado no <header> */
+.site {
+    width: 100%;
+    max-width: 1200px; /* Largura máxima centralizada */
+    margin: 0 auto;
+}
+
+/* Estilo dos links */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 700; /* Negrito */
+    color: #fff; /* Cor branca */
+}
+
+a:visited {
+    color: #fff; /* Mantém branco mesmo após visitado */
+}
+
+a:hover {
+    color: #d99000; /* Cor ao passar o mouse */
+}
+
+/* Container da seção principal do formulário */
+.container {
+    text-align: center; /* Centraliza o conteúdo dentro da seção */
+}
+
+/* Títulos da seção */
+h2 {
+    font-size: 25px; /* Tamanho do título principal */
+}
+
+h3 {
+    text-align: left; /* Alinha subtítulos à esquerda */
+    width: 100%;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os campos à esquerda */
+    max-width: 400px;
+    margin: auto; /* Centraliza o formulário na tela */
+}
+
+/* Campos de texto e área de mensagem */
+input, textarea {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    padding: 10px; /* Espaço interno */
+    margin-bottom: 20px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Botão de envio */
+button {
+    width: 105%; /* Levemente maior que os campos */
+    padding: 13px; /* Altura do botão */
+    background-color: #003366; /* Azul escuro */
+    color: white; /* Texto branco */
+    border: none;
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #002244; /* Azul mais escuro no hover */
+}
+
+/* Estilo da seção de localização */
+.mapa {
+    text-align: center; /* Centraliza o texto */
+    font-size: 30px; /* Tamanho do título */
+    margin-top: 30px; /* Espaço acima da seção */
+}
+
+/* Container do iframe do Google Maps */
+.mapa-container {
+    display: flex;
+    justify-content: center; /* Centraliza o iframe */
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Espaço e centralização */
+}
+
+/* Estilização final do iframe */
+iframe {
+    width: 100%;
+    height: 400px; /* Altura fixa */
+    border-radius: 8px; /* Cantos arredondados */
+    border: none; /* Sem borda */
+}
