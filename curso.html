@@ -1,106 +1,35 @@
-<!DOCTYPE html> <!-- Define que este é um documento HTML5 -->
-<html lang="pt-br"> <!-- Define o idioma da página como Português-Brasil -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, permitindo acentos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala da página para dispositivos móveis -->
-    
-    <!-- Ícone da aba do navegador -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ub-logo-blue.png" type="image/x-icon">
-    
-    <!-- Importação de arquivos CSS externos -->
-    <link rel="stylesheet" href="css/reset.css"> <!-- Reseta estilos padrão do navegador -->
-    <link rel="stylesheet" href="css/header-footer.css"> <!-- Estilos do cabeçalho e rodapé -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Estilos gerais da página -->
-    <link rel="stylesheet" href="css/curso.css"> <!-- Estilos específicos para a página do curso -->
-    
-    <title>Sobre o Curso - Odontologia - Universidade Brasil</title> <!-- Define o título da aba do navegador -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre o Curso - Odontologia - Universidade Brasil</title>
 </head>
 
 <body>
-<header> <!-- Início do cabeçalho da página -->
-    <section class="site"> <!-- Contêiner principal do cabeçalho -->
-        <h1>Universidade Brasil</h1> <!-- Nome da universidade exibido em destaque -->
-        <div>
-            <nav> <!-- Menu de navegação principal -->
-                <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
-                    <li><a href="curso.html">O Curso</a></li> <!-- Link para a página do curso -->
-                    <!-- <li><a href="#servico">Serviço</a></li>  Link comentado (inativo) -->
-                    <li><a href="professores.html">Equipe</a></li> <!-- Link para a página da equipe -->
-                    <!-- <li><a href="#">Contato</a></li>  Link comentado (inativo) -->
-                    <li><a href="login.html">Área do Professor</a></li> <!-- Link para a área de login do professor -->
-                </ul>
-            </nav>
-        </div>
-    </section>
-</header>
+<header>
+        <section class="site">
+            <h1>Universidade Brasil</h1>
+            <div>
 
-<main> <!-- Área principal do conteúdo da página -->
-    <section class="sobre"> <!-- Seção com informações introdutórias sobre o curso -->
-        <h2>Sobre o Curso</h2>
-        <p>É um curso da modalidade Bacharelado. O objetivo dessa formação é preparar os alunos para compreenderem a
-            saúde dos dentes, da boca e também dos ossos da face. Atualmente, a faculdade de Odontologia é uma das
-            mais buscadas na área da Saúde pelos candidatos nos vestibulares.</p>
-    </section>
-    
-    <section class="vantagens"> <!-- Seção listando os diferenciais do curso -->
-        <h2>Lista de Vantagens</h2>
-        <ul>
-            <li>Alta qualidade de ensino com foco prático e teórico</li>
-            <li>Corpo docente com professores renomados</li>
-            <li>Infraestrutura moderna com clínicas e laboratórios próprios</li>
-            <li>Ênfase na prática clínica e na pesquisa</li>
-        </ul>
-    </section>
-
-    <section class="grade"> <!-- Seção com a grade curricular do curso por período -->
-        <h2>Grade por Período<br><br></h2> <!-- Título da seção com quebra de linha (talvez melhor usar CSS para espaçamento) -->
-        <div class="periodos"> <!-- Container dos blocos de períodos -->
-            <!-- Bloco para cada período do curso -->
-            <div class="periodo">
-                <h3>1º Período</h3>
-                <p>Biologia Básica, Políticas Públicas de Saúde</p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="curso.html">O Curso</a></li>
+                        <!-- <li><a href="#servico">Serviço</a></li> -->
+                        <li><a href="professores.html">Equipe</a></li>
+                        <!-- <li><a href="#">Contato</a></li> -->
+                        <li><a href="login.html">Área do Professor</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="periodo">
-                <h3>2º Período</h3>
-                <p>Biologia Oral, Anatomia Básica, Bioquímica e Biofísica, Histologia e Imunologia</p>
-            </div>
-            <div class="periodo">
-                <h3>3º Período</h3>
-                <p>Fisiologia Básica, Microbiologia e Parasitologia, Bioquímica Oral, Patologia</p>
-            </div>
-            <div class="periodo">
-                <h3>4º Período</h3>
-                <p>Introdução à Dentística, Cariologia, Terapêutica Medicamentosa Odontológica, Patologia Bucal</p>
-            </div>
-            <div class="periodo">
-                <h3>5º Período</h3>
-                <p>Semiologia, Anestesiologia e Terapêutica Odontológica, Farmacologia Odontológica</p>
-            </div>
-            <div class="periodo">
-                <h3>6º Período</h3>
-                <p>Periodontia Pré-Clínica, Patologia Bucal Avançada, Dentística Operatória</p>
-            </div>
-            <div class="periodo">
-                <h3>7º Período</h3>
-                <p>Odontopediatria Pré-Clínica, Endodontia Pré-Clínica, Implantodontia Básica, Terapias Regenerativas Odontológicas</p>
-            </div>
-            <div class="periodo">
-                <h3>8º Período</h3>
-                <p>Prótese Parcial Fixa e Oclusão, Prótese Fixa Avançada</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="laboratorio"> <!-- Seção com imagens dos laboratórios do curso -->
-        <h2>Temos excelentes laboratórios com equipamentos e infraestrutura de alto padrão</h2>
-        <div class="container-imagens"> <!-- Container para agrupar imagens -->
-            <img src="img/sala de odonto (curso).webp" alt="Sala de odonto 1" class="imagem"> <!-- Imagem de um laboratório -->
-            <img src="img/sala de odonto 2.jpg" alt="Sala de odonto 2" class="imagem">
-            <img src="img/sala de odonto 3.jpg" alt="Sala de odonto 3" class="imagem">
-            <img src="img/sala de odonto 4.jpg" alt="Sala de odonto 4" class="imagem">
-        </div>
-    </section>
-</main>
+        </section>
+    </header>
 </body>
+
 </html>
