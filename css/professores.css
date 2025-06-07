@@ -50,10 +50,19 @@ a:visited {
 
 a:hover {
     color: #d99000;
+    text-decoration: none;
 }
 
 
 main {
+
+    .container1 {
+        display: flex;
+    }
+
+    .container2 {
+        display: flex;
+    }
 
     section {
         max-width: 1200px;
@@ -61,188 +70,135 @@ main {
         padding: 40px 20px;
 
         article {
-            border: solid 1px #132748;
-            border-radius: 20px;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: space-between;
-
-
-            .professor {
+            .curriculo {
+                width: 500px;
+                height: 300px;
+                border: solid 1px #132748;
+                border-radius: 20px;
+                padding: 10px;
                 display: flex;
-                flex: 1;
-                align-items: center;
-                gap: 20px;
-                padding: 5px;
-                border-radius: 10px;
                 flex-direction: column;
-
-
-                img {
-                    width: 300px;
-                    height: 300px;
-                    border-radius: 10px;
-                }
-
-
-                .professor-info {
-                    h1 {
-                        font-size: 26px;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        margin-bottom: 20px;
-                    }
-
-                    .mais {
-                        width: 100px;
-                        height: 40px;
-                        background: #132748;
-                        color: #f3f3f3;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: background-color 0.3s;
-
-                        &:hover {
-                            color: #132748;
-                            background: #f3f3f3;
-                        }
-                    }
-
-                }
+                gap: 10px;
             }
 
-            .disciplina {
-                flex: 1;
-
-                padding: 20px;
-                border-radius: 10px;
-
-                h3 {
-                    font-size: 24px;
-                    margin-bottom: 20px;
-                    text-align: center;
-                }
-
-                .periodos {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-
-                    .periodo {
-                        background: #f3f3f3;
-                        border-radius: 10px;
-                        padding: 10px;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                        font-size: 20px;
-
-                        h4 {
-                            font-size: 20px;
-                            margin-bottom: 10px;
-                            text-align: center;
-                        }
-
-
-                    }
-                }
+            .curriculo img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                margin-left: 150px;
             }
+
+            .curriculo h2 {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .curriculo p {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .curriculo a {
+                margin-top: auto;
+                margin-left: auto;
+            }
+
+            .curriculo button {
+                width: 200px;
+                height: 30px;
+                background-color: #132748;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .curriculo button:hover {
+                color: #d99000;
+            }
+
         }
+
     }
+
 }
+
 
 /* Responsividade */
 
-@media (max-width:1024px) {
-
-    main section .curriculo .professor .professor-info p {
-        font-size: 20px;
+@media (max-width: 1024px) {
+    .curriculo {
+        width: 45%;
+        height: auto;
+        min-width: 350px;
     }
 
-    main section .curriculo .disciplina .periodos .periodo h4 {
-        font-size: 25px;
-        font-weight: bolder;
+    .curriculo img {
+        width: 120px;
+        height: 120px;
     }
 
-    main section .curriculo .disciplina .periodos .periodo ul li {
-        font-size: 20px;
-        line-height: 20px;
-
+    .curriculo h2 {
+        font-size: 26px;
     }
 
+    .curriculo p {
+        font-size: 14px;
+    }
 }
-
-
-
 
 @media (max-width: 768px) {
-    main section .curriculo .professor img {
-        max-width: 250px;
-        max-height: 250px;
+    .curriculo {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 400px;
     }
 
-    main section .curriculo .disciplina .periodos .periodo h4 {
-        font-size: 20px;
-        font-weight: bolder;
+    .curriculo img {
+        width: 100px;
+        height: 100px;
     }
 
-    main section .curriculo .disciplina .periodos .periodo ul li {
-        font-size: 20px;
-        line-height: 20px;
+    .curriculo h2 {
+        font-size: 22px;
+    }
 
+    .curriculo p {
+        font-size: 13px;
+    }
+
+    .curriculo button {
+        width: 180px;
+        height: 28px;
+        font-size: 14px;
     }
 }
 
-
-
 @media (max-width: 480px) {
-
-    main section .curriculo .professor {
-        padding: 10px;
+    .curriculo {
+        width: 95%;
+        padding: 8px;
     }
 
-    main section .curriculo .professor img {
+    .curriculo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .curriculo h2 {
+        font-size: 18px;
+    }
+
+    .curriculo p {
+        font-size: 12px;
+    }
+
+    .curriculo button {
         width: 150px;
-        height: 150px;
-    }
-
-    main section .curriculo .professor .professor-info h1 {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    main section .curriculo .professor .professor-info p {
-        font-size: 15px;
-    }
-
-    main section .curriculo .professor .professor-info .mais {
-        font-size: small;
-        width: 90px;
-        height: 35px;
-    }
-
-    main section .curriculo .disciplina h3 {
-        font-size: 25px;
-    }
-
-    main section .curriculo .disciplina .periodos .periodo {
-        padding: 10px;
-        font-family: "Open Sans", sans-serif;
-    }
-
-    main section .curriculo .disciplina .periodos .periodo h4 {
-        font-size: 15px;
-        font-weight: bolder;
-    }
-
-    main section .curriculo .disciplina .periodos .periodo ul li {
-        font-size: 15px;
-        line-height: 20px;
-
+        height: 25px;
+        font-size: 12px;
     }
 }
