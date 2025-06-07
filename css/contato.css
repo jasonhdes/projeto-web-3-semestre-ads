@@ -85,12 +85,16 @@ button {
     background-color: #003366; /* Azul escuro */
     color: white; /* Texto branco */
     border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer; /* Muda o cursor ao passar por cima */
 }
 
 /* Efeito hover no botão */
 button:hover {
     background-color: #002244; /* Azul mais escuro no hover */
+    color: #d99000;
 }
 
 /* Estilo da seção de localização */
