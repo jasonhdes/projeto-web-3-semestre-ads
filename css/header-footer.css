@@ -21,7 +21,6 @@ a:visited {
 a:hover {
     color: rgb(217, 144, 0);
 }
-
 header {
     position: fixed;
     top: 0;
@@ -63,9 +62,11 @@ header {
         }
     }
 }
+
 main {
     margin-top: 80px;
 }
+
 footer {
     .footer-line-1 {
         background: #132748;
@@ -97,7 +98,7 @@ footer {
 
             .box2 {
                 width: 750px;
-                height: 400px;
+                height: 240px;
                 margin-top: 25px;
                 float: right;
                 display: flex;
@@ -106,30 +107,31 @@ footer {
                 div {
                     width: 185px;
 
-                    
-                        ul {
-                            h5 {
-                                font-size: 25px;
-                            }
-                            li{
-                                margin-top: 10px;
-                            }
+                    ul {
+                        h5 {
+                            font-size: 25px;
                         }
-                    
-                }
 
-                .mec {
-                    margin-top: 220px;
-                    margin-right: -120px;
-                    flex-direction: row;
-
-                    h4 {
-                        font-size: 18px !important;
+                        li {
+                            margin-top: 10px;
+                        }
                     }
-
 
                 }
             }
+
+            .mec {
+                width: 180px;
+                flex-direction: row;
+                margin-left: 1180px;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+
+            }
+
         }
     }
 
@@ -162,17 +164,18 @@ footer {
                     width: 185px;
                     margin: 0 10px;
 
-                    
-                        ul {
-                            h5 {
-                                font-size: 20px;
-                            }
-                            li{
-                                font-size: 18px;
-                                margin-top: 10px;
-                            }
+
+                    ul {
+                        h5 {
+                            font-size: 20px;
                         }
-                    
+
+                        li {
+                            font-size: 18px;
+                            margin-top: 10px;
+                        }
+                    }
+
                 }
             }
         }
@@ -185,6 +188,7 @@ footer {
 
         .site {
             display: flex;
+            flex-wrap: wrap;
 
             .box1 {
                 width: 200px;
@@ -227,8 +231,10 @@ footer {
                             min-height: 60px;
                         }
 
+
                         .instagram {
                             background-image: url(../img/instagram.png);
+                            background-size: cover;
                         }
 
                         .facebook {
@@ -250,31 +256,26 @@ footer {
                         }
 
                         .instagram:hover {
-                            background-image: url(../img/instagramd.png);
+                            background-image: url(../img/instagramd.png) no-repeat;
                         }
 
 
                         .facebook:hover {
-                            background-image: url(../img/facebookd.png);
+                            background-image: url(../img/facebookd.png)no-repeat;
                         }
 
                         .whatsapp:hover {
-                            background-image: url(../img/whatsappd.png);
+                            background-image: url(../img/whatsappd.png)no-repeat;
                         }
 
                         .youtube:hover {
-                            background-image: url(../img/youtubed.png);
+                            background-image: url(../img/youtubed.png)no-repeat;
                         }
 
                     }
                 }
 
-                small {
-                    color: #fff;
-                    height: 20px;
-                    font-size: 10px;
-                    font-weight: 500;
-                }
+
             }
 
             .box3 {
@@ -292,14 +293,19 @@ footer {
                     }
                 }
             }
+
+            small {
+                color: #fff;
+                font-size: 10px;
+                font-weight: 500;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+
         }
     }
 }
-
-
-
-
-
 
 
 @media (max-width:1024px) {
@@ -334,55 +340,44 @@ footer {
         .footer-line-1 {
             .site {
                 .box2 {
-                    width: 620px;
+                    width: 610px;
+                    height: 235px;
+                }
 
-                    div {
-                        ul {
-                            h5 {
-                                font-size: 18px;
-                            }
-                            li{
-                                margin-top: 10px;
-                            }
-                        }
-                    }
+                .mec {
+                    margin-left: 835px;
 
-                    .mec {
-                        margin-top: 220px;
-                        margin-right: 4px;
-                        flex-direction: row;
-
-                        h4 {
-                            font-size: 18px;
-                            margin-bottom: 8px;
-                        }
-                    
-
-
+                    h4 {
+                        font-size: 18px;
+                        font-weight: bolder;
                     }
                 }
             }
         }
 
-       
 
-        .footer-line-3{
+
+        .footer-line-3 {
             height: 201px;
-            .site{
-                align-items: center;
-                .box2{
-                    ul{
-                        width: 500px;
+
+            .site {
+                .box1 {
+                    h6 {
+                        margin-left: 12px;
                     }
                 }
 
-                .box3{
-                    width: 325px;
-                    padding-top: 25px;
+                .box2 {
+                    width: 500px;
 
-                    summary::marker{
-                        display: none;
+                    ul {
+                        width: 495px;
                     }
+                }
+
+                .box3 {
+                    width: 300px;
+                    padding-top: 25px;
                 }
             }
         }
@@ -390,7 +385,346 @@ footer {
 }
 
 
+
+
+
+
 @media (max-width:768px) {
+
+    header {
+        max-width: 768px;
+    }
+
+    footer {
+        & .footer-line-1 {
+            height: 367px;
+
+            & .site {
+                & .box1 {
+                    width: 100px;
+
+                    .logo-ub-footer {
+                        width: 150px;
+                        height: 150px;
+
+                    }
+
+                    h3 {
+                        font-size: 25px;
+                    }
+                }
+
+                & .box2 {
+                    width: 500px;
+                    height: 150px;
+
+                    div {
+                        ul {
+                            h5 {
+                                font-size: 18px;
+                            }
+
+                            li {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .mec {
+                    width: 190px;
+                    margin-top: 228px;
+                    margin-left: 580px;
+
+                    h4 {
+                        font-size: 18px;
+                        font-weight: bolder;
+                    }
+                }
+
+
+
+
+            }
+
+
+
+
+
+        }
+
+
+        .footer-line-3 {
+            align-items: center;
+
+            .site {
+                .box2 {
+                    width: 300px;
+
+                    ul {
+                        width: 280px;
+                    }
+                }
+
+                .box3 {
+                    width: 260px;
+
+                    a {
+                        font-size: 15px;
+                    }
+
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+
+        small {
+            color: #fff;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
 }
 
-@media (max-width:480px) {}
+
+@media (min-width:481px) {
+
+    .abrirMenu,
+    .fecharMenu {
+
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .menuAtivo {
+        header {
+            max-width: 100%;
+
+            .site {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 20px;
+
+                h1 {
+                    margin: 12px auto;
+                }
+
+                div {
+                    .abrirMenu {
+                        background: url(../img/menu-bar.png) no-repeat;
+                        width: 50px;
+                        height: 50px;
+                        background-size: cover;
+                        position: fixed;
+                        z-index: 10000;
+                    }
+
+                    nav ul {
+
+                        flex-direction: column;
+                        position: fixed;
+                        right: 0;
+                        top: 0;
+                        background: #d99000;
+                        width: 18%;
+                        max-width: 240px;
+
+                        z-index: 9999;
+
+
+                        .fecharMenu {
+                            background: url(../img/close.png) no-repeat;
+                            width: 40px;
+                            height: 40px;
+                            background-size: cover;
+                            border: none;
+                            align-self: flex-end;
+                            margin-bottom: 10px;
+                        }
+
+                        li {
+                            margin: 10px auto;
+
+                            a {
+                                font-size: 18px;
+                                color: #f3f3f3;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    } 
+
+footer {
+    .footer-line-1 {
+
+        height: 279px;
+
+        .site {
+            height: 255px;
+
+            .box1 {
+                .logo-ub-footer {
+                    width: 90px;
+                    height: 90px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    margin-left: 10px;
+                }
+            }
+
+            .box2 {
+                width: 200px;
+                height: 150px;
+
+                & div {
+                    & ul {
+                        h5 {
+                            font-size: 12px;
+                            font-weight: 800;
+                        }
+
+                        li {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .mec {
+                width: 120px;
+                margin-top: 165px;
+                margin-left: 200px;
+
+                h4 {
+                    font-size: 12px;
+                }
+
+                img {
+                    width: 120px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+
+    .footer-line-2 {
+        padding: 10px 0;
+
+        .site {
+
+            .line1,
+            .line2 {
+                div {
+                    ul {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 800;
+                        }
+
+                        li {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-line-3 {
+        background: #132748;
+        height: auto;
+        padding: 1px 0;
+
+        .site {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h5 {
+                    background: url(../img/logo-ub-branco.png) no-repeat center center;
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px 0;
+                }
+
+                h6 {
+                    width: 150px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+
+            .box2 {
+                width: auto;
+                text-align: center;
+                height: 80px;
+                margin-bottom: 10px;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    width: 260px;
+
+                    li {
+                        display: flex;
+                        width: 50px;
+                        height: 50px;
+
+                        .instagram,
+                        .facebook,
+                        .whatsapp,
+                        .youtube {
+                            background-size: 40px 40px;
+                            background-repeat: no-repeat;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .box3 {
+                align-items: center;
+                text-align: center;
+
+            }
+
+            small {
+                color: #fff;
+                font-size: 10px;
+                font-weight: 500;
+            }
+        }
+
+
+    }
+
+
+
+}
+}
