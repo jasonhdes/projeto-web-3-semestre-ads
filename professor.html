@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- Estilo personalizado para resetar estilos padrão dos navegadores -->
     <link rel="stylesheet" href="css/professor.css"> <!-- Estilo personalizado para a seção dos professores -->
-    <link rel="stylesheet" href="css/curso.css"> <!-- Estilo personalizado relacionado ao curso -->
+    <!-- <link rel="stylesheet" href="css/curso.css"> Estilo personalizado relacionado ao curso -->
     <title>Professores - Odontologia - Universidade Brasil</title> <!-- Título da aba do navegador -->
 </head>
 
 <body> <!-- Início do corpo visível da página -->
     <main> <!-- Conteúdo principal da página -->
-        <section> <!-- Seção que agrupa todos os artigos de professores -->
+        <section id="01" class="persona"> <!-- Seção que agrupa todos os artigos de professores -->
             <!-- Início do currículo do primeiro professor -->
-            <article id="01" class="curriculo"> <!-- Artigo com ID e classe para identificação/estilização -->
+            <article class="curriculo"> <!-- Artigo com ID e classe para identificação/estilização -->
                 <div class="professor"> <!-- Div que agrupa imagem e informações do professor -->
                     <img src="img/1.png" class="img-fluid" alt="Imagem responsiva">
                     <!-- Imagem do professor, responsiva -->
@@ -37,7 +37,6 @@
                             Mestrado em Fisiologia Oral e Bioquímica Aplicada pela Universidade Federal de Minas Gerais
                             (UFMG)<br>
                         </p>
-                        <button class="mais">Saiba mais</button> <!-- Botão para mais informações -->
                     </div>
                 </div>
                 <div class="disciplina"> <!-- Seção com disciplinas que o professor leciona -->
@@ -86,8 +85,10 @@
                 </div>
             </article>
             <!-- Os demais artigos seguem o mesmo padrão -->
+        </section>
+        <section id="02" class="persona">
             <!-- Artigo do segundo professor -->
-            <article id="02" class="curriculo">
+            <article class="curriculo">
                 <div class="professor">
                     <img src="img/2.png" class="img-fluid" alt="Imagem responsiva">
                     <div class="professor-info">
@@ -99,7 +100,6 @@
                             Especialização em Prótese Parcial Fixa e Oclusão pela UFMG<br><br>
                             Mestrado em Políticas Públicas de Saúde e Gestão Odontológica pela UFRGS<br>
                         </p>
-                        <button class="mais">Saiba mais</button>
                     </div>
                 </div>
                 <div class="disciplina">
@@ -150,8 +150,10 @@
                     </div>
                 </div>
             </article>
+        </section>
+        <section id="03" class="persona">
             <!-- Terceiro professor -->
-            <article id="03" class="curriculo">
+            <article class="curriculo">
                 <div class="professor">
                     <img src="img/3.png" class="img-fluid" alt="Imagem responsiva">
                     <div class="professor-info">
@@ -163,7 +165,6 @@
                             Especialização em Anestesiologia Odontológica pela UFBA<br><br>
                             Mestrado em Bioquímica e Patologia Oral pela UFRGS<br>
                         </p>
-                        <button class="mais">Saiba mais</button>
                     </div>
                 </div>
                 <div class="disciplina">
@@ -195,9 +196,10 @@
                     </div>
                 </div>
             </article>
-
+        </section>
+        <section id="04" class="persona">
             <!-- Quarto professor -->
-            <article id="04" class="curriculo">
+            <article class="curriculo">
                 <div class="professor">
                     <img src="img/4.png" class="img-fluid" alt="Imagem responsiva">
                     <div class="professor-info">
@@ -209,7 +211,6 @@
                             Especialização em Terapias Regenerativas Odontológicas pela UFRJ<br><br>
                             Mestrado em Biomateriais e Engenharia Tecidual pela UFPE<br>
                         </p>
-                        <button class="mais">Saiba mais</button>
                     </div>
                 </div>
                 <div class="disciplina">
