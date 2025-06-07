@@ -56,11 +56,7 @@ a:hover {
 
 main {
 
-    .container1 {
-        display: flex;
-    }
-
-    .container2 {
+    .container-sm {
         display: flex;
     }
 
@@ -178,27 +174,36 @@ main {
 }
 
 @media (max-width: 480px) {
-    .curriculo {
-        width: 95%;
-        padding: 8px;
-    }
 
-    .curriculo img {
-        width: 80px;
-        height: 80px;
-    }
+    .container-sm{
+        max-width: 440px;
+        section {
+            article {
 
-    .curriculo h2 {
-        font-size: 18px;
-    }
+                .curriculo {
+                    width: 95%;
+                    padding: 8px;
 
-    .curriculo p {
-        font-size: 12px;
-    }
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
 
-    .curriculo button {
-        width: 150px;
-        height: 25px;
-        font-size: 12px;
+                    h2 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    button {
+                        width: 150px;
+                        height: 25px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
