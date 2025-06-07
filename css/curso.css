@@ -1,0 +1,129 @@
+/* Importa fontes do Google Fonts para uso no site */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+/* Define que iframes ocupam toda a largura disponível */
+iframe {
+    width: 100%;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: "Montserrat", sans-serif; /* Fonte padrão do corpo */
+}
+
+/* Define a fonte para títulos e links */
+h2, h3, h4, h5, h6, a {
+    font-family: "Noto Sans KR", sans-serif; /* Fonte secundária */
+}
+
+/* Estiliza o contêiner principal do header */
+.site {
+    width: 100%;
+    max-width: 1200px; /* Largura máxima centralizada */
+    margin: 0 auto;
+}
+
+/* Estilização de links */
+a {
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 700;
+    color: #fff; /* Cor branca */
+}
+
+a:visited {
+    color: #fff; /* Mantém cor branca após clique */
+}
+
+a:hover {
+    color: #d99000; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilização específica do título da seção 'sobre' */
+.sobre h2 {
+    text-align: justify; /* Alinha o título como texto normal */
+    margin-top: 100px; /* Espaçamento superior */
+}
+
+/* Área principal do conteúdo */
+main {
+    width: 80%; /* Largura de 80% da tela */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento vertical */
+}
+
+/* Estiliza todos os títulos h2 da página */
+h2 {
+    font-family: "Noto Sans JP", sans-serif; /* Fonte especial para títulos */
+    font-size: 25px;
+}
+
+/* Estilização dos parágrafos */
+p {
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: "Noto Sans KR", sans-serif; /* Fonte legível para leitura corrida */
+}
+
+/* Estiliza seções com fundo branco */
+.sobre,
+.vantagens,
+.grade {
+    line-height: 1.3; /* Espaçamento entre linhas */
+    background-color: white;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento inferior entre seções */
+}
+
+/* Estilo da lista de vantagens */
+.vantagens ul {
+    font-size: 17px;
+    font-family: "Noto Sans JP", sans-serif;
+    list-style-type: square; /* Usa quadrados como marcadores */
+    padding-left: 20px;
+    line-height: 1.3;
+}
+
+/* Layout da grade de períodos */
+.periodos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de mesmo tamanho */
+    gap: 20px; /* Espaçamento entre os períodos */
+}
+
+/* Bloco individual de cada período */
+.periodo {
+    background-color: #f3f3f3; /* Cinza claro */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Estilo dos subtítulos (h3) dentro da grade */
+h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #132748; /* Azul escuro */
+}
+
+/* Estilização da seção de laboratórios */
+.laboratorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre título e imagens */
+}
+
+/* Galeria de imagens com grid */
+.container-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas iguais */
+    gap: 10px; /* Espaço entre imagens */
+    justify-items: center; /* Centraliza imagens dentro de cada célula */
+}
+
+/* Estiliza as imagens dos laboratórios */
+.imagem {
+    width: 550px;
+    height: 300px;
+    object-fit: cover; /* Mantém proporção sem distorcer */
+    border-radius: 10px;
+}
