@@ -1,16 +1,257 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara o tipo do documento como HTML5 -->
+<html lang="pt-br"> <!-- Início do HTML; define o idioma como português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ub-logo-blue.png" type="image/x-icon">
+<head> <!-- Início da seção de cabeçalho do HTML -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Responsividade: adapta a largura da página ao dispositivo -->
+    <link rel="shortcut icon" href="img/logo-ub-head.png" type="image/x-icon"> <!--Icone de aba-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Importa o CSS do Bootstrap 4.1.3 -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <title>Professor - Odontologia - Universidade Brasil</title>
+    <!-- Estilo personalizado para resetar estilos padrão dos navegadores -->
+    <link rel="stylesheet" href="css/professor.css"> <!-- Estilo personalizado para a seção dos professores -->
+    <link rel="stylesheet" href="css/curso.css"> <!-- Estilo personalizado relacionado ao curso -->
+    <title>Professores - Odontologia - Universidade Brasil</title> <!-- Título da aba do navegador -->
 </head>
 
-<body>
+<body> <!-- Início do corpo visível da página -->
+    <main> <!-- Conteúdo principal da página -->
+        <section> <!-- Seção que agrupa todos os artigos de professores -->
+            <!-- Início do currículo do primeiro professor -->
+            <article id="01" class="curriculo"> <!-- Artigo com ID e classe para identificação/estilização -->
+                <div class="professor"> <!-- Div que agrupa imagem e informações do professor -->
+                    <img src="img/1.png" class="img-fluid" alt="Imagem responsiva">
+                    <!-- Imagem do professor, responsiva -->
+                    <div class="professor-info"> <!-- Informações textuais do professor -->
+                        <h1>Dr. Lucas Moreira</h1> <!-- Nome do professor -->
+                        <p> <!-- Currículo resumido do professor -->
+                            Graduação em Odontologia pela Universidade de São Paulo (USP)<br><br>
+                            Especialização em Cariologia e Dentística Restauradora pela Universidade Estadual de
+                            Campinas (UNICAMP)<br><br>
+                            Especialização em Microbiologia e Parasitologia Odontológica pela Universidade Federal do
+                            Rio de Janeiro (UFRJ)<br><br>
+                            Especialização em Anestesiologia e Terapêutica Odontológica pela Universidade de Pernambuco
+                            (UPE)<br><br>
+                            Mestrado em Fisiologia Oral e Bioquímica Aplicada pela Universidade Federal de Minas Gerais
+                            (UFMG)<br>
+                        </p>
+                        <button class="mais">Saiba mais</button> <!-- Botão para mais informações -->
+                    </div>
+                </div>
+                <div class="disciplina"> <!-- Seção com disciplinas que o professor leciona -->
+                    <h3>Disciplinas Lecionadas</h3>
+                    <div class="periodos"> <!-- Agrupa os períodos -->
+                        <!-- Cada período representa uma fase do curso -->
+                        <div class="periodo">
+                            <h4>1° Período</h4>
+                            <ul>
+                                <li class="de">Biologia Básica</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>2° Período</h4>
+                            <ul>
+                                <li>Biologia Oral</li>
+                                <li>Anatomia Básica</li>
+                                <li>Bioquímica e Biofísica</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>3° Período</h4>
+                            <ul>
+                                <li>Fisiologia Básica</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>4° Período</h4>
+                            <ul>
+                                <li>Introdução à Dentística</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>5° Período</h4>
+                            <ul>
+                                <li>Semiologia</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>7° Período</h4>
+                            <ul>
+                                <li>Odontopediatria Pré-Clínica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Os demais artigos seguem o mesmo padrão -->
+            <!-- Artigo do segundo professor -->
+            <article id="02" class="curriculo">
+                <div class="professor">
+                    <img src="img/2.png" class="img-fluid" alt="Imagem responsiva">
+                    <div class="professor-info">
+                        <h1>Dra. Carolina Almeida</h1>
+                        <p>
+                            Graduação em Odontologia pela Universidade Federal do Rio de Janeiro (UFRJ)<br><br>
+                            Especialização em Patologia Bucal e Diagnóstico Oral pela UNICAMP<br><br>
+                            Especialização em Endodontia pela USP<br><br>
+                            Especialização em Prótese Parcial Fixa e Oclusão pela UFMG<br><br>
+                            Mestrado em Políticas Públicas de Saúde e Gestão Odontológica pela UFRGS<br>
+                        </p>
+                        <button class="mais">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="disciplina">
+                    <h3>Disciplinas Lecionadas</h3>
+                    <div class="periodos">
+                        <div class="periodo">
+                            <h4>1° Período</h4>
+                            <ul>
+                                <li>Políticas Públicas de Saúde</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>2° Período</h4>
+                            <ul>
+                                <li>Histologia e Imunologia</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>3° Período</h4>
+                            <ul>
+                                <li>Patologia</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>4° Período</h4>
+                            <ul>
+                                <li>Patologia Bucal</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>6° Período</h4>
+                            <ul>
+                                <li>Dentística Operatória</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>7° Período</h4>
+                            <ul>
+                                <li>Endodontia Pré-Clínica</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>8° Período</h4>
+                            <ul>
+                                <li>Prótese Parcial Fixa e Oclusão</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Terceiro professor -->
+            <article id="03" class="curriculo">
+                <div class="professor">
+                    <img src="img/3.png" class="img-fluid" alt="Imagem responsiva">
+                    <div class="professor-info">
+                        <h1>Dr. Rafael Mendes</h1>
+                        <p>
+                            Graduação em Odontologia pela UNESP<br><br>
+                            Especialização em Cariologia e Biomateriais Dentários pela UFSC<br><br>
+                            Especialização em Microbiologia Oral pela UFPR<br><br>
+                            Especialização em Anestesiologia Odontológica pela UFBA<br><br>
+                            Mestrado em Bioquímica e Patologia Oral pela UFRGS<br>
+                        </p>
+                        <button class="mais">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="disciplina">
+                    <h3>Disciplinas Lecionadas</h3>
+                    <div class="periodos">
+                        <div class="periodo">
+                            <h4>3° Período</h4>
+                            <ul>
+                                <li>Microbiologia</li>
+                                <li>Parasitologia</li>
+                                <li>Bioquímica Oral</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>4° Período</h4>
+                            <ul>
+                                <li>Cariologia</li>
+                                <li>Terapêutica Medicamentosa Odontológica</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>5° Período</h4>
+                            <ul>
+                                <li>Anestesiologia</li>
+                                <li>Terapêutica Odontológica</li>
+                                <li>Farmacologia Odontológica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quarto professor -->
+            <article id="04" class="curriculo">
+                <div class="professor">
+                    <img src="img/4.png" class="img-fluid" alt="Imagem responsiva">
+                    <div class="professor-info">
+                        <h1>Dr. Gustavo Almeida</h1>
+                        <p>
+                            Graduação em Odontologia pela USP<br><br>
+                            Especialização em Periodontia e Implantodontia pela UNICAMP<br><br>
+                            Especialização em Patologia Bucal pela UFMG<br><br>
+                            Especialização em Terapias Regenerativas Odontológicas pela UFRJ<br><br>
+                            Mestrado em Biomateriais e Engenharia Tecidual pela UFPE<br>
+                        </p>
+                        <button class="mais">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="disciplina">
+                    <h3>Disciplinas Lecionadas</h3>
+                    <div class="periodos">
+                        <div class="periodo">
+                            <h4>6° Período</h4>
+                            <ul>
+                                <li>Periodontia Pré-Clínica</li>
+                                <li>Patologia Bucal Avançada</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>7° Período</h4>
+                            <ul>
+                                <li>Implantodontia Básica</li>
+                                <li>Terapias Regenerativas Odontológicas</li>
+                            </ul>
+                        </div>
+                        <div class="periodo">
+                            <h4>8° Período</h4>
+                            <ul>
+                                <li>Prótese Fixa Avançada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Scripts necessários para o funcionamento de componentes do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </body>
 
