@@ -14,6 +14,7 @@ font-family: "DM Sans", sans-serif;
     Amarelo = #d99000
     Branco = #f3f3f3
 */
+
 iframe {
     width: 100%;
 }
@@ -53,7 +54,7 @@ a:hover {
 
 main {
     .banner {
-        /* background-image: linear-gradient(rgb(19, 79, 32, 0.1), rgb(255, 255, 255, 0.3)),url(../img/banner.jpg); */
+        
         background: url(../img/banner.jpg) no-repeat center center;
         background-repeat: no-repeat;
         background-position: center;
@@ -65,7 +66,7 @@ main {
         padding-top: 100px;
 
         .logo-ub {
-            /* background-image: linear-gradient(rgb(19, 79, 32, 0.0), rgb(255, 255, 255, 0.8)),url(../img/ub-logo-white-1.png); */
+            
             background: url(../img/ub-logo-white-1.png) no-repeat center center;
 
             background-size: cover;
@@ -114,7 +115,7 @@ main {
         }
 
         p {
-            font-size: 18px;
+            font-size: 22px;
             background: #fff;
             text-align: center;
             margin: 0 auto;
@@ -192,7 +193,7 @@ main {
 
                 p {
                     height: 200px;
-                    /* padding: 20px 0; */
+                    
                     font-size: 20px;
                 }
 
@@ -373,6 +374,7 @@ main {
             .recomend {
                 padding-top: 50px;
                 padding-left: 50px;
+                
 
                 h3 {
                     padding-top: 100px;
@@ -385,6 +387,7 @@ main {
                     font-size: 50px;
                     font-weight: 600;
                     padding-right: 50px;
+
                 }
             }
 
@@ -414,7 +417,7 @@ main {
         }
 
         .banner {
-            /* background-image: linear-gradient(rgb(19, 79, 32, 0.1), rgb(255, 255, 255, 0.3)), url(../img/banner.jpg); */
+            
             background: url(../img/banner.jpg) no-repeat center center;
             background-repeat: no-repeat;
             background-position: center;
@@ -684,6 +687,7 @@ main {
 
 @media (max-width:480px) {
     header {
+        max-width: 320px;
         .site {
             div {
                 nav {
@@ -928,6 +932,7 @@ main {
                         padding-right: 0;
                         text-align: center;
                         margin-top: 10px;
+                        max-width: 320px;
                     }
                 }
 

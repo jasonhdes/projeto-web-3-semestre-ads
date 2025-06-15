@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+    FONTES 
+font-family: "Noto Sans KR" sans-serif;   links e depoimento de pessoas
+font-family: "Noto Sans JP", sans-serif; textos títulos
+font-family: "Open Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "DM Sans", sans-serif;
+
+    CORES
+    
+    Azul =  #132748
+    Amarelo = #d99000
+    Branco = #f3f3f3
+*/
+
+
 h2,
 h3,
 h4,
@@ -36,14 +54,16 @@ header {
         display: flex;
         justify-content: space-between;
 
-        h1 {
-            width: 50px;
-            height: 50px;
-            background: url(../img/logo-ub-branco.png) no-repeat;
-            background-size: 100% 100%;
-            text-indent: -9999px;
-            margin: 12px 0;
-        }
+        
+            h1 {
+                width: 50px;
+                height: 50px;
+                background: url(../img/logo-ub-branco.png) no-repeat;
+                background-size: 100% 100%;
+                text-indent: -9999px;
+                margin: 12px 0;
+            }
+        
 
         div {
             margin: 15px;
@@ -53,7 +73,7 @@ header {
                 color: #132748;
                 display: flex;
                 justify-content: space-between;
-                height: 55px;
+                height: 60px;
                 font-size: 20px;
 
                 li {
@@ -181,13 +201,13 @@ footer {
                             margin-top: 10px;
 
                             a {
-                                color: #d99000;
+                                color: #132748;
                             }
                         }
 
                         li:hover,
                         a:hover {
-                            color: #132748;
+                            color: #d99000;
                         }
                     }
 
@@ -264,27 +284,22 @@ footer {
                             background-image: url(../img/youtube.png);
                         }
 
-                        li:hover,
-                        a:hover {
-                            min-width: 70px;
-                            min-height: 70px;
-                        }
+
 
                         .instagram:hover {
-                            background-image: url(../img/instagramd.png) no-repeat;
+                            background: url(../img/instagramd.png) no-repeat;
                         }
 
-
                         .facebook:hover {
-                            background-image: url(../img/facebookd.png)no-repeat;
+                            background: url(../img/facebookd.png)no-repeat;
                         }
 
                         .whatsapp:hover {
-                            background-image: url(../img/whatsappd.png)no-repeat;
+                            background: url(../img/whatsappd.png)no-repeat;
                         }
 
                         .youtube:hover {
-                            background-image: url(../img/youtubed.png)no-repeat;
+                            background: url(../img/youtubed.png) no-repeat;
                         }
 
                     }
@@ -532,69 +547,73 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .menuAtivo {
-        header {
-            max-width: 100%;
 
-            .site {
-                width: 100%;
-                max-width: 100%;
-                padding: 0 20px;
+    header {
+        max-width: 320px;
 
-                h1 {
-                    margin: 12px auto;
-                }
+        .site {
+            width: 100%;
+            max-width: 320px;
+            padding: 0 20px;
 
-                div {
-                    .abrirMenu {
-                        background: url(../img/menu-bar.png) no-repeat;
-                        width: 50px;
-                        height: 50px;
-                        background-size: cover;
-                        position: fixed;
-                        z-index: 10000;
-                    }
-
-                    nav ul {
-
-                        flex-direction: column;
-                        position: fixed;
-                        right: 0;
-                        top: 0;
-                        background: #d99000;
-                        width: 18%;
-                        max-width: 240px;
-
-                        z-index: 9999;
-
-
-                        .fecharMenu {
-                            background: url(../img/close.png) no-repeat;
-                            width: 40px;
-                            height: 40px;
-                            background-size: cover;
-                            border: none;
-                            align-self: flex-end;
-                            margin-bottom: 10px;
-                        }
-
-                        li {
-                            margin: 10px auto;
-
-                            a {
-                                font-size: 18px;
-                                color: #f3f3f3;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-
-
-
+            h1 {
+                margin: 12px auto;
             }
+
+            div {
+
+                .abrirMenu {
+                    background: url(../img/menu-bar.png) no-repeat;
+                    width: 50px;
+                    height: 50px;
+                    background-size: cover;
+                    position: fixed;
+                    z-index: 10000;
+                }
+
+                nav ul {
+
+                    flex-direction: column;
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                    background: #d99000;
+                    width: 18%;
+                    max-width: 240px;
+                    display: none;
+
+                    z-index: 9999;
+
+
+                    .fecharMenu {
+                        background: url(../img/close.png) no-repeat;
+                        width: 40px;
+                        height: 40px;
+                        background-size: cover;
+                        border: none;
+                        align-self: flex-end;
+                        margin-bottom: 10px;
+                    }
+
+                    li {
+                        margin: 10px auto;
+                        display: none;
+
+                        a {
+                            font-size: 18px;
+                            color: #f3f3f3;
+                            text-decoration: none;
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+
         }
     }
+
 
 
 
@@ -605,10 +624,10 @@ footer {
             height: auto;
 
             .site {
-                height:auto;
+                height: 325px;
                 display: flex;
                 flex-direction: column;
-                
+
 
                 .box1 {
                     .logo-ub-footer {
@@ -634,9 +653,10 @@ footer {
                             }
 
                             li {
-                                
+
                                 font-weight: 600;
-                                a{
+
+                                a {
                                     font-size: 10px;
                                 }
                             }
@@ -646,35 +666,163 @@ footer {
 
                 .mec {
                     display: none;
-                    
+
                 }
             }
         }
 
 
         .footer-line-2 {
-            padding: 10px 0;
+            background: #f7f7f7;
+            height: 1675px;
 
             .site {
+                display: flex;
+                flex-direction: column;
 
-                .line1,
-                .line2 {
+
+                .line1 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 0px;
+                    margin-top: 100px;
+
                     div {
-                        ul {
+
+                        h5 {
+                            font-size: 16px;
+                            font-weight: bold;
                             margin-bottom: 10px;
-                            h5 {
-                                font-size: 14px;
-                                font-weight: 800;
-                            }
+                            color: #333;
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
 
                             li {
-                                font-size: 15px;
+                                margin-bottom: 8px;
+
+                                a {
+                                    font-size: 14px;
+                                    color: #d99000;
+                                    text-decoration: none;
+                                    transition: color 0.3s;
+
+                                    &:hover {
+                                        color: #132748;
+                                    }
+                                }
                             }
                         }
                     }
+
+                    .box1 {
+                        padding-top: 50px;
+
+                        ul {
+
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box2 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box3 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box4 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box5 {
+                        ul {
+                            padding-bottom: 0px;
+                        }
+                    }
+
+
+
+
+
+                }
+
+
+                .line2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    div {
+
+                        h5 {
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            color: #333;
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                margin-bottom: 8px;
+
+                                a {
+                                    font-size: 14px;
+                                    color: #d99000;
+                                    text-decoration: none;
+                                    transition: color 0.3s;
+
+                                    &:hover {
+                                        color: #132748;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .box1 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box2 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box3 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    .box4 {
+                        ul {
+                            padding-bottom: 20px;
+                        }
+                    }
+
                 }
             }
         }
+
 
         .footer-line-3 {
             background: #132748;
@@ -714,7 +862,7 @@ footer {
                     text-align: center;
                     height: 80px;
                     margin-bottom: 10px;
-                    
+
 
                     ul {
                         display: flex;
@@ -768,12 +916,7 @@ footer {
         height: auto;
     }
 
-    .footer-line-1 {
-        .site {
 
-           
-        }
-    }
 
     .footer-line-2 {
         .site {
