@@ -1,147 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* 
-    FONTES USADAS NO PROJETO:
-    "Noto Sans KR" – usada em links e depoimentos
-    "Noto Sans JP" – usada para títulos e textos
-    "Open Sans", "DM Sans", "Montserrat" – fontes auxiliares
+    FONTES 
+font-family: "Noto Sans KR" sans-serif;   links e depoimento de pessoas
+font-family: "Noto Sans JP", sans-serif; textos títulos
+font-family: "Open Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "DM Sans", sans-serif;
+
+    CORES
+    
+    Azul =  #132748
+    Amarelo = #d99000
+    Branco = #f3f3f3
 */
 
-/* Aplica a fonte "Noto Sans KR" para títulos (h2 a h6) e links (a) */
+
 body {
     font-family: "Montserrat", sans-serif;
-    overflow: hidden;
 }
 
-/* Estilização do header fixo no topo da página */
-header {
-    position: fixed;
-    /* fixo no topo */
-    top: 0;
-    z-index: 1000;
-    /* fica acima de outros elementos */
+.site {
     width: 100%;
-    /* ocupa toda a largura */
-    height: 80px;
-    /* altura fixa */
-    background: #132748;
-    /* fundo azul escuro */
-    color: #fff;
-    /* texto branco */
-    border-bottom: solid 1px #d99000;
-    /* borda inferior dourada */
-
-    /* Estilos para o container .site dentro do header */
-    .site {
-        display: flex;
-        /* layout flexível */
-        justify-content: space-between;
-        /* espaça os itens */
-        margin-top: 10px;
-
-        /* Logo dentro do header */
-        h1 {
-            width: 50px;
-            height: 50px;
-            /* background: url(../img/logo-ub-branco.png) no-repeat;  */
-            background-size: 100% 100%;
-            /* cobre todo o espaço */
-            text-indent: -9999px;
-            /* esconde texto acessível */
-            margin: 12px 0;
-        }
-
-        /* Container para navegação e outros conteúdos */
-        div {
-            /* margin: 15px; */
-            width: 80%;
-
-            /* Menu de navegação */
-            nav ul {
-                color: #132748;
-                /* cor azul escuro (não será visível, provavelmente erro) */
-                display: flex;
-                /* itens na mesma linha */
-                justify-content: space-between;
-                /* espaça os itens */
-                height: 55px;
-                font-size: 20px;
-
-                /* Itens da lista do menu */
-                li {
-                    margin: auto;
-                    /* centraliza verticalmente */
-                }
-            }
-        }
-    }
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Conteúdo principal da página */
-main {
-    padding-top: 5px;
-    /* Espaço para não ficar atrás do header fixo */
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
 
-    /* Centraliza texto dos itens da lista dentro do main */
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #d99000;
+    text-decoration: none;
+}
+
+main {
+    margin: 10px;
+    margin-top: 100px;
     li {
         text-align: center;
     }
 
-    /* Seções dentro do main */
     section {
         max-width: 1200px;
-        /* largura máxima */
         margin: 0 auto;
-        /* centraliza horizontalmente */
-        margin-bottom: 100px;
+        margin-bottom: 25px;
 
-        /* padding: 40px 20px;  */
-        /* Artigos dentro da seção */
         article {
             border: solid 1px #132748;
-            /* borda azul */
             border-radius: 20px;
-            /* cantos arredondados */
-            padding: 10px;
-            /* espaçamento interno */
             display: flex;
-            /* layout flexível */
             flex-wrap: wrap;
-            /* permite quebra de linha */
-            gap: 40px;
-            /* espaço entre itens */
             justify-content: space-between;
-            /* espaço entre os itens */
 
-            /* Bloco do professor */
+
+
             .professor {
                 margin-top: 10px;
                 display: flex;
                 flex: 1;
-                /* ocupa espaço disponível */
                 align-items: center;
-                /* alinhamento vertical */
                 gap: 20px;
-                /* espaço entre itens */
-                /* padding: 5px; */
                 border-radius: 10px;
-                /* cantos arredondados */
                 flex-direction: column;
-                /* itens em coluna */
 
-                /* Imagem do professor */
+
+
                 img {
                     width: 300px;
                     height: 300px;
                     border-radius: 10px;
                 }
 
-                /* Informações do professor */
+
                 .professor-info {
                     h1 {
                         font-size: 26px;
-                        margin-bottom: 5px;
+                        margin-bottom: 6px;
+                        margin-left: 170px;
                     }
 
                     p {
@@ -150,60 +93,62 @@ main {
                         line-height: 1.3;
                     }
 
-                    /* Botão "mais" */
+
                     .mais {
                         width: 100px;
                         height: 40px;
                         background: #132748;
-                        /* fundo azul escuro */
+
                         color: #f3f3f3;
-                        /* texto claro */
+
                         border: none;
                         border-radius: 5px;
                         cursor: pointer;
                         transition: background-color 0.3s;
 
-                        /* Efeito hover no botão */
+
                         &:hover {
                             color: #132748;
-                            /* texto azul escuro */
+
                             background: #f3f3f3;
-                            /* fundo claro */
+
                         }
                     }
                 }
             }
 
-            /* Bloco da disciplina */
+
             .disciplina {
                 flex: 1;
                 padding: 5px;
                 border-radius: 10px;
+                align-items: center;
 
-                /* Título da disciplina */
+
                 h3 {
                     font-size: 24px;
                     margin-bottom: 10px;
                     text-align: center;
+                    
                 }
 
-                /* Lista de períodos */
+
                 .periodos {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
+                    width: 320px;
+                    margin-left: 130px;
 
-                    /* Cada período */
                     .periodo {
                         background: #f3f3f3;
-                        /* fundo claro */
+                        width: 300px;
+
                         border-radius: 10px;
                         padding: 10px;
                         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                        /* sombra leve */
                         font-size: 20px;
 
-                        /* Título do período */
                         h4 {
                             font-size: 15;
                             margin-bottom: 5px;
@@ -216,7 +161,66 @@ main {
     }
 }
 
-/* Espaçamento entre artigos do currículo */
-/* main section article.curriculo + article.curriculo {
-    margin-top: 10px;
-} */
+footer {
+    display: none;
+}
+
+@media (max-width:1024px) {
+
+    main {
+        section {
+            max-width: 990px;
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+
+    main {
+        section {
+            max-width: 700px;
+        }
+    }
+
+}
+
+@media (max-width:480px) {
+
+    header {
+        .site {
+            div {
+                nav ul {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    main {
+        section {
+            article {
+                max-width: 300px;
+                margin-left: 12px;
+                height: 1500px;
+                gap: 0px;
+
+                .professor {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+
+                .disciplina {
+                    & .periodos {
+                        & .periodo {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

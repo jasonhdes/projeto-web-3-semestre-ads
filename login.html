@@ -6,66 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="img/logo-ub-head.png" type="image/x-icon">
-    <!-- sempre reset em primeiro -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- Link para as fa-eye -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <!-- Meu estilo SEMPRE em último -->
     <link rel="stylesheet" href="css/login.css">
-
-
-
 </head>
 
 <body>
-    <div class="container-principal">
-        <div class="painel-esquerdo">
-            <div class="camada-escura"></div>
-            <img src="img/imagem-fundo-login.png" alt="Chapeu de formatura" class="imagem-fundo">
-            <div class="conteudo-texto">
-                <p class="slogan">Chegou a hora<br>de você<br>fazer a diferença</p>
-                <h1 class="nome-universidade">Universidade Brasil.</h1>
+    <main>
+        <div class="container-principal">
+            <div class="painel-esquerdo">
+                <div class="camada-escura"></div>
+                <img src="img/imagem-fundo-login.png" alt="Chapeu de formatura" class="imagem-fundo">
+                <div class="conteudo-texto">
+                    <p class="slogan">Chegou a hora<br>de você<br>fazer a diferença</p>
+                    <h1 class="nome-universidade">Universidade Brasil.</h1>
 
+                </div>
+            </div>
+            <div class="painel-direito">
+                <div class="placeholder-logo">
+                    <img src="img/ub-logo-blue.png" alt="logo">
+                </div>
+                <h2>Olá, professor(a)!</h2>
+                <form id="form-login">
+                    <div class="grupo-formulario">
+                        <label for="email">Login</label>
+                        <input type="email" id="email" placeholder="Usuário ou e-mail">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="password">Senha</label>
+                        <div class="campo-senha-com-toggle">
+                            <input type="password" id="password" placeholder="Digite sua senha">
+                            <i class="fas fa-eye toggle-senha"></i>
+                        </div>
+                    </div>
+                    <div id="mensagem-feedback" class="mensagem-feedback"></div>
+                    <div class="linha-opcoes">
+                        <div class="lembrar-me">
+                            <input type="checkbox" id="lembrar-me">
+                            <label for="lembrar-me">Lembrar-me</label>
+                        </div>
+                        <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="botao-entrar">Entrar</button>
+                </form>
+                <div class="sem-conta">
+                <a href="index.html">Voltar para Home</a>
+                </div>
             </div>
         </div>
-        <div class="painel-direito">
-            <div class="placeholder-logo">
-                <img src="img/ub-logo-blue.png" alt="logo">
-            </div>
-            <h2>Olá, professor(a)!</h2>
-            <form id="form-login">
-                <div class="grupo-formulario">
-                    <label for="email">Login</label>
-                    <input type="email" id="email" placeholder="Usuário ou e-mail">
-                </div>
-                <div class="grupo-formulario">
-                    <label for="password">Senha</label>
-                    <div class="campo-senha-com-toggle">
-                        <input type="password" id="password" placeholder="Digite sua senha">
-                        <i class="fas fa-eye toggle-senha"></i>
-                    </div>
-                </div>
-                <div id="mensagem-feedback" class="mensagem-feedback"></div>
-
-                <div class="linha-opcoes">
-                    <div class="lembrar-me">
-                        <input type="checkbox" id="lembrar-me">
-                        <label for="lembrar-me">Lembrar-me</label>
-                    </div>
-                    <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
-                </div>
-                <button type="submit" class="botao-entrar">Entrar</button>
-            </form>
-            <div class="sem-conta">
-                <p>Não tem uma conta? <a href="#">Cadastre-se agora</a></p>
-            </div>
-            <div class="sem-conta">
-                <p><a href="index.html">Voltar para Home</a></p>
-            </div>
-        </div>
-    </div>
-
+    </main>
     <script src="js/login.js"></script>
 </body>
 
